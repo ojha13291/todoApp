@@ -5,7 +5,7 @@ const standardTheme = document.querySelector('.standard-theme');
 const lightTheme = document.querySelector('.light-theme');
 const darkerTheme = document.querySelector('.darker-theme');
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://todoapp-ilfy.onrender.com/api';
 const API_TODO_URL = `${API_BASE_URL}/todos`;
 const API_AUTH_URL = `${API_BASE_URL}/auth`;
 

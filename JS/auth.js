@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://todoapp-ilfy.onrender.com/api';
 
 if (document.getElementById('login-form')) {
     const loginForm = document.getElementById('login-form');
