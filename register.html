@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#062e3f">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <!-- <link rel="stylesheet" href="CSS/main.css"> -->
+    <!-- Temporarily comment out your CSS file to see if there are conflicts -->
+    <!-- <link rel="stylesheet" href="CSS/auth.css"> -->
+    <title>Register - JUST DO IT</title>
+    <style>
+        #auth-container {
+            background-color: rgba(52, 73, 94, 0.8) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3) !important;
+            margin: 50px auto !important;
+            max-width: 500px !important;
+            padding: 40px !important;
+            width: 80% !important;
+        }
+
+        #auth-container h1 {
+            color: #f8c9d4 !important;
+            font-size: 3rem !important;
+            font-weight: 400 !important;
+            margin-bottom: 40px !important;
+            text-align: center !important;
+            display: block !important;
+        }
+
+        .form-group {
+            margin-bottom: 25px !important;
+            display: block !important;
+            width: 100% !important;
+            clear: both !important;
+        }
+
+        .form-group label {
+            display: block !important;
+            font-size: 1.2rem !important;
+            margin-bottom: 10px !important;
+            font-weight: 400 !important;
+            float: none !important;
+            text-align: left !important;
+        }
+
+        .form-group input {
+            background-color: rgba(255, 255, 255, 0.15) !important;
+            border: none !important;
+            border-radius: 8px !important;
+            color: #ffffff !important;
+            font-family: 'Work Sans', sans-serif !important;
+            font-size: 1.1rem !important;
+            padding: 15px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            display: block !important;
+            margin-bottom: 5px !important;
+            float: none !important;
+        }
+
+        .auth-btn {
+            background-color: #f8c9d4 !important;
+            border: none !important;
+            border-radius: 8px !important;
+            color: #2c3e50 !important;
+            cursor: pointer !important;
+            font-family: 'Work Sans', sans-serif !important;
+            font-size: 1.2rem !important;
+            font-weight: 500 !important;
+            margin-top: 20px !important;
+            padding: 15px !important;
+            width: 100% !important;
+            display: block !important;
+        }
+
+        #already-account, 
+        #auth-container p {
+            margin-top: 30px !important;
+            font-size: 1.1rem !important;
+            text-align: center !important;
+            display: block !important;
+            clear: both !important;
+        }
+
+        #already-account a,
+        #auth-container a {
+            color: #f8c9d4 !important;
+            text-decoration: none !important;
+            font-weight: 500 !important;
+        }
+    </style>
+</head>
+<body class="standard">
+    <div id="auth-container">
+        <h1>Register</h1>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required minlength="6" placeholder="Minimum 6 characters">
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" required minlength="6" placeholder="Re-enter your password">
+            </div>
+            
+            <button type="submit" class="auth-btn">Register</button>
+        </form>
+        
+        <p id="already-account">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <script src="JS/auth.js"></script>
+</body>
+</html>
